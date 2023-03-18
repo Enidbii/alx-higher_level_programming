@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __name__ = "__main__:
+if __name__ == "__main__":
     import sys
 
     arguc = len(argv) - 1
@@ -8,6 +8,6 @@ if __name__ = "__main__:
     elif arguc == 1:
         print("1 argument:")
     else:
-        print(f"{} arguments:".format(arguc))
+        print("{} arguments:".format(arguc))
     for i in range(arguc):
-        print(f"{}: {}".format(i + 1, sys.argv[i + 1]]))
+        print("{}: {}".format(i + 1, sys.argv[i + 1]]))
