@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-def safe_print_list(my_list=[], x=0):
-    counter = 0
-    for idx in range(x):
+def safe_print_list(my_list = [], x = 0):
+    for x in my_list:
         try:
-            print(f'{my_list[idx]}', end='')
-        except (IndexError):
-            continue
-        counter += 1
-        print()
-        return (counter)
+            print(my_list[x])
+        except IndexError:
+            print("Sorry, that index does not exist")
