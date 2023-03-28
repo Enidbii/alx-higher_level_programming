@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" executables file created """
+""" square module """
 
 
 class Square:
-    """ Creates a suare class that is empty """
+    """ Creates a square class that is empty """
 
 
 
