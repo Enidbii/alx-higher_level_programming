@@ -6,9 +6,14 @@ class Square:
 
     """ Initializing the class """
 
-   # def __init__(self, size):
-    #    __size = size
+    def __init__(self, size) -> None:
 
+        """ 
 
-    """ Create an instance that defines size """
-    __size
+        declares the instance attributes 
+        
+        args: size of square
+        
+        """
+
+        self.__size = size
