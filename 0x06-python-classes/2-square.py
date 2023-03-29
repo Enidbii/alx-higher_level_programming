@@ -1,17 +1,19 @@
 #!/usr/bin/python3
+""" Square module """
 
-""" Suare module """
 
 class Square:
+    """ defines a  class square """
+    def __init__(self, size=0) -> None:
+        """
+        This is the initialization method
 
-    """ Initiatizing init with try """
-    
-    def __init(self, size = 0):
-        self.__size = size
-        try:
-            Square()
-        except TypeError:
-            raise size must be an integer
-        except ValueError:
-            if size < 0:
-                raise size must be >= 0
+        Args:
+        size (int): size of the square
+        """
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.size = size
