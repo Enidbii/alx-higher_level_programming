@@ -11,7 +11,7 @@ class Square:
         Args:
             size: size of square
         """
-        self.size(__size)
+        self.size = size
 
     @property
     def size(self):
