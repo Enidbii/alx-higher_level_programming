@@ -23,5 +23,5 @@ class Square:
         Args:
             area: area itself
         """
-        area = self.size * self.size
-        return area
+        self.area = self.__size * self.__size
+        return self.area
