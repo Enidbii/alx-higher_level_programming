@@ -13,16 +13,6 @@ class Square:
         """
         self.size(__size)
 
-    def area(self):
-        """
-        decleares and defines this method's attributes"
-        
-        Args:
-            area: area of the square
-        """
-        area = self.__size * self.__size
-        return area
-    
     @property
     def size(self):
         """
@@ -33,6 +23,7 @@ class Square:
         """
         return self.__size
 
+    @size.setter
     def size(self, value):
         """
         sets the size of the square
@@ -46,3 +37,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
+    def area(self):
+        """ a method that returns area """
+        return self.__size ** 2
