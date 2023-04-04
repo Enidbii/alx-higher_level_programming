@@ -1,0 +1,45 @@
+===================================
+2-matrix_divided module
+==================================
+
+
+This is a function "2-matrix_divided" that divides all elements of a
+matrix with integers as its components otherwise raise
+an "exception" and return division.
+
+==================================
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+checking for matrix being ints and float
+::
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 2)
+	[[0.5, 1, 1.5], [2, 2.5, 3]]
+	>>> matrix_divided([[1.5, 5, 10], [15, 20, 30]], 2)
+	[[0.75, 2.5, 5], [7.5, 10, 15]]
+
+checking for matrix having ints, strings included
+::
+	>>> matrix_divided([["pen", "cup", 2], ["tie", 4, "two"]], 4)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	>>> matrix_divided([["pen", "cup", 2.4], ["for", "two", 7.6]], 3)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+checking for same row size
+::
+	>>> matrix_divided([[3,4], [4,3,6]], 2)
+	Traceback (most recent call last):
+	TypeError: Each row of the matrix must have the same size
+
+checking for div being a number
+::
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], "two")
+	Traceback (most recent call last):
+	TypeError: div must be a number
+
+checking for 0 division error
+::
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
+	Traceback (most recent call last):
+	ZeroDivisionError: division by zero

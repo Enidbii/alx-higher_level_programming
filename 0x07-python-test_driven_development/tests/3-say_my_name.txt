@@ -1,0 +1,27 @@
+====================================
+3-say_my_name module
+====================================
+The function "say_my_name" prints out two names of the same type string
+raises an "exception" otherwise
+
+====================================
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+checking for strings passed in
+::
+	>>> say_my_name("John, "Smith")
+	My name is John Smith
+	>>> say_my_name("Walter", "White")
+	My name is Walter White
+	>>> say_my_name("Bob")
+	My name is Bob
+
+checking for ints, floats passed
+::
+	say_my_name(12, "White")
+	Traceback (most recent call last):
+	TypeError: first name must be a string
+	say_my_name("White", 12)
+	Traceback (most recent call last):
+	TypeError: last name must be a string 
