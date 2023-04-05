@@ -2,7 +2,6 @@
 """ copy list module """
 
 
-def copy_list(l):
+def copy_list(n):
     """ returns a copy of a list """
-    l = []
-    n = l[:]
+    return n.copy()
