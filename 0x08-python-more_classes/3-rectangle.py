@@ -57,5 +57,5 @@ class Rectangle:
         hashstr = ""
         if self.__width != 0 or self.__height != 0:
             hashstr += "\n".join("#" * self__width
-                    for j in range(self__height))
+                                 for j in range(self__height))
             return hashstr
