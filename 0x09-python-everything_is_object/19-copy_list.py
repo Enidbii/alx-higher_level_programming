@@ -4,4 +4,5 @@
 
 def copy_list(n):
     """ returns a copy of a list """
-    return n.copy()
+    p = []
+    n = p
