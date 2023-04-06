@@ -2,6 +2,6 @@
 """ copy list module """
 
 
-def copiy_list(lo):
+def copiy_list(n):
     """ returns a copy of a list """
-    return lo.copy()
+    return n.copy()
