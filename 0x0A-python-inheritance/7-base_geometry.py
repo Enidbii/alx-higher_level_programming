@@ -4,10 +4,8 @@
 
 class BaseGeometry:
     """ Base Geometry class """
-    def __init__(self):
-        pass
-
     def area(self):
+        """ raises exception """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
