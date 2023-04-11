@@ -1,0 +1,17 @@
+================================
+1-my_list module test
+================================
+test the list to ensure it prints out sorted list and is
+a list of integers as well
+
+import the function used
+=================================
+	printsorted = __import__('print_sorted').printsorted
+
+checking for ints
+::
+	print_sorted([1,2,3,4,5])
+	[1,2,3,4,5]
+	print_sorted([1, "string", 4, 5])
+	Traceback (most recent call last):
+	TypeError: should be an integer	
