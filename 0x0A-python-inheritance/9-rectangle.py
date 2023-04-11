@@ -33,10 +33,10 @@ class Rectangle(BaseGeometry):
             width: width of rectangle
             height: height of rectangle
         """
-        self.integer_validator("width", width)
         self.__width = width
-        self.integer_validator("height", height)
         self.__height = height
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
 
     def area(self):
         """ area of rectangle """
