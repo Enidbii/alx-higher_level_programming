@@ -8,5 +8,5 @@ import json
 def load_from_json_file(filename):
     """ creates an obj from a json file """
     with open(filename, "r", encoding="utf-8") as f:
-        obj_created = json.loads(f)
+        obj_created = json.load(f)
         return obj_created
