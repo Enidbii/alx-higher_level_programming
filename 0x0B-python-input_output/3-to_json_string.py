@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-import json
 """ to json string function """
+
+
+import json
 
 
 def to_json_string(my_obj):
     """ returns json representation of an object """
-    json.dump(my_obj)
+    return json.numps(my_obj)
