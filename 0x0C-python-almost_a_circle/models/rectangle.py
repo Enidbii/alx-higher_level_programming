@@ -75,3 +75,10 @@ class Rectangle(Base):
             print()
         for row in range(self.height):
             print("{}{}".format(" " * self.x, "#" * self.width))
+
+    def __str__(self):
+        """ update class rectangle """
+        return "[{}} ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id, self.__x,
+                                                self.__y,self.__width,
+                                                self.__height)
