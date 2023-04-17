@@ -85,8 +85,12 @@ class Rectangle(Base):
 
     def update(self, *args):
         """ update class by assigning argument to each attribute """
-        args_list = ["id", "width", "height", "x", "y"]
-        j = o
-        for arg in args:
-            setattr(self, args_list[j], arg)
-            j += 1
+        if args:
+            args_list = ["id", "width", "height", "x", "y"]
+            j = o
+            for arg in args:
+                setattr(self, args_list[j], arg)
+                j += 1
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
