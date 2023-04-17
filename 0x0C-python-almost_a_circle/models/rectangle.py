@@ -29,7 +29,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """ setter of the width """
-        self.integer_validator("name", value)
+        self.integer_validator("width", value)
         self.__width = value
 
     @property
@@ -40,7 +40,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """ sets height of rectangle """
-        self.integer_validator("name", value)
+        self.integer_validator("height", value)
         self.__height = value
 
     @property
