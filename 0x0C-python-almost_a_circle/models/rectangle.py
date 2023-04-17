@@ -16,10 +16,10 @@ class Rectangle(Base):
             y: y
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -29,7 +29,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """ setter of the width """
-        self.integer_validator('width', value)
+        self.integer_validator("name", value)
         self.__width = value
 
     @property
@@ -40,18 +40,18 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """ sets height of rectangle """
-        self.integer_validator('height', value)
+        self.integer_validator("name", value)
         self.__height = value
 
     @property
     def x(self):
         """ gets x """
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         """ sets value x """
-        self.second_validator('x', value)
+        self.second_validator("x", value)
         self.__x = value
 
     @property
@@ -62,6 +62,16 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """ sets y """
-        self.second_validator('y', value)
+        self.second_validator("y", value)
         self.__y = value
 
+    def area(self):
+        """ gets the area of the rectangle """
+        return self.__width * self.__height
+
+    def display(self):
+        """ prints # rectangle """
+        for row in range(self.y):
+            print()
+        for row in range(self.height):
+            print("{}{}".format(" " * self.x, "#" * self.width))

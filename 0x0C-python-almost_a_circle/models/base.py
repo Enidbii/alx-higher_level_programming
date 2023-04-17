@@ -18,6 +18,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    
     def integer_validator(self, name, value):
         """
         validates value
