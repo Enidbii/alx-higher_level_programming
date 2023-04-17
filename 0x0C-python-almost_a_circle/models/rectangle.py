@@ -80,7 +80,7 @@ class Rectangle(Base):
         """ update class rectangle """
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                                                 self.id, self.__x,
-                                                self.__y,self.__width,
+                                                self.__y, self.__width,
                                                 self.__height)
 
     def update(self, *args):
