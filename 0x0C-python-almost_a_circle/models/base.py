@@ -67,3 +67,13 @@ class Base:
             string = '[]'
         with open(cls.__name__ + '.json', 'w') as file:
             file.write(string)
+
+    def from_json_string(json_string):
+        """
+        returns the list of json string
+        Args:
+            json_string: string representing list of dictionaries
+        """
+        if json_string is None:
+            return '[]'
+        return json.loads(json_string)
