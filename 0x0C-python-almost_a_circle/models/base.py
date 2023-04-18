@@ -62,7 +62,7 @@ class Base:
         """
         if list_objs:
             string = cls.to_json_string([obj.to_dictionary()
-                                        for obj in list_objs])
+                                         for obj in list_objs])
         else:
             string = '[]'
         with open(cls.__name__ + '.json', 'w') as file:
