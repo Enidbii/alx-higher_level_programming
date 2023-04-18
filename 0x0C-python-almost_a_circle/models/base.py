@@ -67,4 +67,3 @@ class Base:
             string = '[]'
         with open(cls.__name__ + '.json', 'w') as file:
             file.write(string)
-
