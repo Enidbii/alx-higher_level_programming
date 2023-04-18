@@ -49,5 +49,5 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """ returns dict representation of class """
-        return {'id': self.id,'x': self.x,'size': self.size,
+        return {'id': self.id, 'x': self.x, 'size': self.size,
                 'y': self.y}
