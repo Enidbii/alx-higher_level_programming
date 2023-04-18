@@ -49,5 +49,5 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """ returns dict representation of class """
-        return dict((name, getattr(self, name)) for name in dir(self)
-                    if not name.startswith('__'))
+        return {'x': self.x, 'y': self.y, 'id': self.id,
+                'height': self.height, 'width': self.width}

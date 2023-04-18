@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ Base class module """
 
+import json
+
 
 class Base:
     """base of all other classes of the projects """
@@ -42,3 +44,16 @@ class Base:
             raise TypeError("{} must be an integer".format(name))
         if value < 0:
             raise ValueError("{} must be >= 0".format(name))
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """
+        returns json string representation of listdictionaries
+        Args:
+            list_dictionaries: list of dictionaries
+        """
+        list_dictionaries = Base.Rectangle.__init__
+        if list_dictionaries is None:
+            return "[]"
+        else:
+            return json.loads(list_dictionaries)
