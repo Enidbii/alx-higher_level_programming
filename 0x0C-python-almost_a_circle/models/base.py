@@ -52,7 +52,6 @@ class Base:
         Args:
             list_dictionaries: list of dictionaries
         """
-        list_dictionaries = Base.Rectangle.__init__
         if list_dictionaries is None:
-            return "[]"
-        return json.loads(list_dictionaries)
+            return []
+        return json.dumps(list_dictionaries)
