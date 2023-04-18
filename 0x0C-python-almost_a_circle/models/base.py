@@ -55,5 +55,4 @@ class Base:
         list_dictionaries = Base.Rectangle.__init__
         if list_dictionaries is None:
             return "[]"
-        else:
-            return json.loads(list_dictionaries)
+        return json.loads(list_dictionaries)
