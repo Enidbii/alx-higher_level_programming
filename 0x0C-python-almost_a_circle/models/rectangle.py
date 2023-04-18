@@ -97,4 +97,5 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ returns dictionary representation of rectangle """
-        return vars(self)
+        return dict((name, getattr(self, name)) for name in dir(self)
+                    if not name.startswith('__'))
