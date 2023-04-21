@@ -93,7 +93,7 @@ class Base:
         """ returns list pf instances """
         try:
             f_name = cls.__name + '.json'
-            with open(f_name, 'r') as file:
+            with open(f_name, mode='r') as file:
                 dic = cls.from_json_string(file.read())
             return [cls.create(**dictionary) for f in dic]
         except FileNotFoundError:
