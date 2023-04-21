@@ -95,6 +95,6 @@ class Base:
             f_name = cls.__name + '.json'
             with open(f_name, mode='r') as file:
                 dic = cls.from_json_string(file.read())
-            return [cls.create(**dictionary) for f in dic]
+            return [cls.create(**dictionary) for dictionary in dic]
         except FileNotFoundError:
             return []
