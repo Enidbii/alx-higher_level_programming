@@ -87,3 +87,13 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """ returns list pf instances """
+        f_name = cls.__name + '.json'
+        with open(f_name, 'r') as file:
+            dic = cls.from_json_string(file.read())
+            return [cls.create(**dictionary) for f in dic]
+        except FileNotFoundError:
+            return []
