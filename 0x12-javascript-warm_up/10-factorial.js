@@ -9,5 +9,4 @@ function factor (i) {
   return (i * factor(i - 1));
 }
 
-
 console.log(factor(parseInt(process.argv[2])));
