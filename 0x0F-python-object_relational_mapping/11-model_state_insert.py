@@ -17,8 +17,8 @@ if __name__ == "__main__":
     session = Session()
     n_state = State(name='Louisiana')
     session.add(n_state)
-    new_id = session.query(State.id).filter_by(name='Louisiana')
-    print(new_id)
+    new_id = session.query(State).filter_by(name='Louisiana')
+    print(new_id.id)
     session.commit()
 
     session.close()
