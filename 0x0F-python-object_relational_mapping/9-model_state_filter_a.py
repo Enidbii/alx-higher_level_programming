@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+all State objects that contain the letter a from the database hbtn_0e_6_usa
+"""
 
 import sqlalchemy
 from sys import argv
