@@ -3,6 +3,7 @@
 contains the class definition of a State and an instance
 Base = declarative_base()
 """
+import sqlalchemy
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Sequence
 from sqlalchemy import Column, Integer, String
