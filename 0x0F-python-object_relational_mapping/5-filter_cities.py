@@ -11,10 +11,9 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3], charset="utf8")
     c = db.cursor()
     c.execute("""SELECT cities.name FROM cities JOIN states ON\
-            cities.state_id = states.id Where states.name LIKE\
-            %s ORDER BY cities.id""", (argv[4], ))
+            cities.state_id = states.id WHERE states.name LIKE\
+            %s ORDER BY cities.id""", (argv[4],))
     rows = c.fetchall()
-    for row in rows:
-        print(row)
+    print(", ".join(row[0] for row in rows))
     c.close()
     db.close()
