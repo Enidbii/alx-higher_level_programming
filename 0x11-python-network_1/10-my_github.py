@@ -3,7 +3,7 @@
 and uses the GitHub API to display your id """
 
 
-f __name__ == '__main__':
+if __name__ == '__main__':
     import sys
     import requests
 
