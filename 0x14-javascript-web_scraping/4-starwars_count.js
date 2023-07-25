@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /* prints number of movies where character wedege antilles is */
 
-const req = require('req');
+const req = require('request')
 req(process.argv[2], function (error, response, body) {
   if (!error) {
     const reslt = JSON.parse(body).reslt;
