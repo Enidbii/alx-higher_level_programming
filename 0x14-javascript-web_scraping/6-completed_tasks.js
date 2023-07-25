@@ -1,10 +1,10 @@
 #!/usr/bin/node
 /* computes the number of tasks completed by user id */
 
-const req = require('req');
+const request =  require('request');
 const url = process.argv[2];
 
-req(url, (err, response, body) => {
+request(url, (err, response, body) => {
   if (err) console.log(err);
   else {
     const respOnse = {};
