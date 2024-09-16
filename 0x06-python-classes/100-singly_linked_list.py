@@ -52,7 +52,7 @@ class Node:
             self.__next_node = value
 
 
-class SinglyLinkedList:
+class SinglyLinkedList(Node):
     """ defines a class of singly linked lists attributes """
     def __init__(self) -> None:
         """ Initializes attribute of the class """
