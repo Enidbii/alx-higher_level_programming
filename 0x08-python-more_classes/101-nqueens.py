@@ -1,3 +1,4 @@
+#!/usr/bin/python3 env
 import sys
 
 def init_board(n):
